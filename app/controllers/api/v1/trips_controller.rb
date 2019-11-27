@@ -10,7 +10,7 @@ class Api::V1::TripsController < ApplicationController
         if @trip.save
             render json: @trip
         else
-            render json: (error: 'Error creating trip')
+            render json: {error: 'Error creating trip'}
         end
     end
 
