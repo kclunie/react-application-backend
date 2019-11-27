@@ -2,8 +2,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :cities
-      resources :trips
+      resources :trips do
+        resources :cities
+      end
     end
   end
 
