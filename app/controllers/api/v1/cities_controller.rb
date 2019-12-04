@@ -15,9 +15,9 @@ class Api::V1::CitiesController < ApplicationController
     def create
         @city = @trip.cities.new(city_params)
         if @city.save
-            render json: @city
+            render json: @trip
         else
-            render json: (error: 'Error creating city')
+            render json: {error: 'Error creating city'}
         end
     end
 
