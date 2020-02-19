@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_26_011753) do
+ActiveRecord::Schema.define(version: 2020_02_19_023946) do
 
   create_table "cities", force: :cascade do |t|
     t.integer "trip_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2019_11_26_011753) do
     t.string "activities"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "like"
   end
 
   create_table "trips", force: :cascade do |t|
