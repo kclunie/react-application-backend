@@ -1,8 +1,10 @@
 class Api::V1::TripsController < ApplicationController
 
     def index
+        binding.pry
         @trips = Trip.all
         render json: @trips
+        
     end
 
     def create
@@ -24,11 +26,11 @@ class Api::V1::TripsController < ApplicationController
         @trip.destroy
     end
 
-    def update
-        @trip = Trip.find(params[:id])
-        @trip.update(name: params["trip"]["name"])
-        @trip.save
-        render json: @trip
+   def update
+        # @trip = Trip.find(params[:id])
+        # @trip.update(trip_params)
+        # @trip.save
+        # render json: @trip
     end
 
     private
