@@ -1,7 +1,7 @@
 class Api::V1::TripsController < ApplicationController
 
     def index
-        binding.pry
+        # binding.pry
         @trips = Trip.all
         render json: @trips
         
