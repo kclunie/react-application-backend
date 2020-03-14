@@ -27,6 +27,7 @@ class Api::V1::TripsController < ApplicationController
     end
 
    def update
+    #binding.pry
         @trip = Trip.find(params[:id])
         @trip.update(trip_params)
         @trip.save
