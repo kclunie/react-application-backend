@@ -27,7 +27,7 @@ class Api::V1::TripsController < ApplicationController
     end
 
    def update
-    #binding.pry
+    #binding.pry - testing push
         @trip = Trip.find(params[:id])
         @trip.update(trip_params)
         @trip.save
