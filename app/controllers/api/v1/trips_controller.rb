@@ -27,10 +27,10 @@ class Api::V1::TripsController < ApplicationController
     end
 
    def update
-        # @trip = Trip.find(params[:id])
-        # @trip.update(trip_params)
-        # @trip.save
-        # render json: @trip
+        @trip = Trip.find(params[:id])
+        @trip.update(trip_params)
+        @trip.save
+        render json: @trip
     end
 
     private
