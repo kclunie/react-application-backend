@@ -21,12 +21,15 @@ class Api::V1::CitiesController < ApplicationController
         end
     end
 
-
     def destroy
         @city = City.find(params["id"])
         @trip = Trip.find(@city.trip_id)
         @city.destroy
         render json: @trip
+    end
+
+    def update
+
     end
 
     private
