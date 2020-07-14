@@ -2,7 +2,7 @@ class Api::V1::TripsController < ApplicationController
 
     def index
         # binding.pry
-        @trips = Trip.all
+        @trips = Trip.order_by_name
         render json: @trips
         
     end
