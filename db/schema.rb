@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_19_023946) do
+ActiveRecord::Schema.define(version: 2020_07_21_133911) do
 
   create_table "cities", force: :cascade do |t|
     t.integer "trip_id"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_02_19_023946) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "like"
+    t.integer "likes"
   end
 
   create_table "trips", force: :cascade do |t|
