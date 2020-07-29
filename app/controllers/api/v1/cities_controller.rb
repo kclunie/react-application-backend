@@ -39,7 +39,7 @@ class Api::V1::CitiesController < ApplicationController
     end
 
     def city_params
-        params.require(:city).permit(:trip_id, :location, :hotel, :restaurants, :activities)
+        params.require(:city).permit(:trip_id, :location, :hotel, :restaurants, :activities, :like, :likes)
     end
 
 end
