@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :trips do
+        resources :likes do
+        end
         resources :cities do
-          resources :likes
+          resources :likes do
+          end
         end
       end
     end
