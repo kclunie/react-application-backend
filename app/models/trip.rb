@@ -4,4 +4,6 @@ class Trip < ApplicationRecord
 
     scope :order_by_name, -> {order(name: :asc)}
 
+    has_many :likes
+
 end
