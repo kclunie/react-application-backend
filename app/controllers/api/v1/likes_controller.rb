@@ -3,6 +3,7 @@ class Api::V1::LikesController < ApplicationController
     before_action :set_trip
 
     def create
+        # binding.pry
         @like = @trip.likes.new(like_params)
         if @like.save
             render json: @trip
