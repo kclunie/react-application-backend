@@ -6,7 +6,7 @@ Rails.application.routes.draw do
         resources :likes do
         end
         resources :cities do
-          resources :likes do
+          # resources :likes do
           end
         end
       end
