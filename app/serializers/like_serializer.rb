@@ -1,5 +1,5 @@
 class LikeSerializer < ActiveModel::Serializer
-    attributes :id, :count, :city_id, :trip_id
+    attributes :id, :count, :trip_id
     belongs_to :trip
-    belongs_to :city
+    # belongs_to :city
   end
