@@ -17,7 +17,7 @@ group :development do
 end
 
 # Use Puma as the app server
-gem 'puma', '~> 3.12'
+gem 'puma', '~> 4.3'
 
 gem 'rack-cors'
 
